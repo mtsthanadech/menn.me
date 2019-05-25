@@ -8,6 +8,16 @@
 	<meta property="og:image" content="./profile.jpg" />
 	<link rel="shortcut icon" type="image/png" href="./favicon.png"/>
 	<title>Mt's Thanadech - Developer ฝึกหัด</title>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-133351645-3"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-133351645-3');
+	</script>
+
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
 	<style type="text/css">
@@ -73,18 +83,33 @@
 			background-color: #000000c5;
 			border-color: transparent;
 		}
-		.row {
+		.row:last-child {
 			position: relative;
 			top: 25%;
 		}
-		.col-md-4 {
+		.row:first-child {
+			position: relative;
+			top: 20%;
+		}
+		.col-md-4, .col-md-3 {
 			display: flex;
 			justify-content: space-around;
+		}
+		.col-md-6 {
+			display: block;
+			/*display: flex;*/
+			/*flex-wrap: wrap;*/
 		}
 		.container {
 			width: 100vw;
 			height: 100vh;
 			align-items: center;
+		}
+		.name {
+			font-size: 22px;
+		}
+		.position {
+			font-size: 14px;
 		}
 
 	</style>
@@ -92,6 +117,18 @@
 <body>
 	<img src="./profile.png" class="card-img-top" style="display: none" alt="...">
 	<div class="container">
+		<div class="row text-center">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<!-- <div class="name"> -->
+					<h4>Thanadech Srisukawasu (Menn)</h4>
+				<!-- </div> -->
+				<!-- <div class="position"> -->
+					<h6>Full-stack Developer</h6>
+				<!-- </div> -->
+			</div>
+			<div class="col-md-3"></div>
+		</div>
 		<div class="row text-center">
 			<div class="col-md-4">
 				<div class="card" style="width: 18rem;">
@@ -126,9 +163,9 @@
 		</div>
 	</div>
 
-
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</script>
 </body>
 </html>
