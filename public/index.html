@@ -6,6 +6,10 @@
 	<meta property="og:title" content="Mt's Website" />
 	<meta property="og:description" content="The Website is about Mt's Thanadech" />
 	<meta property="og:image" content="./profile.jpg" />
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
 	<link rel="shortcut icon" type="image/png" href="./favicon.png"/>
 	<title>Mt's Thanadech - Developer ฝึกหัด</title>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -54,12 +58,6 @@
 			flex: 1 1 auto;
 			padding: 1.5rem;
 		}
-		.card-title {
-			
-		}
-		.card-text {
-			
-		}
 		.btn-inst {
 			background: #f09433; 
 			background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
@@ -71,9 +69,6 @@
 		}
 		.btn-inst:hover {
 			border-color: transparent;
-		}
-		.btn-face {
-			
 		}
 		.btn-gith {
 			background-color: #24292e;
@@ -91,15 +86,6 @@
 			position: relative;
 			top: 20%;
 		}
-		.col-md-4, .col-md-3 {
-			display: flex;
-			justify-content: space-around;
-		}
-		.col-md-6 {
-			display: block;
-			/*display: flex;*/
-			/*flex-wrap: wrap;*/
-		}
 		.container {
 			width: 100vw;
 			height: 100vh;
@@ -111,6 +97,20 @@
 		.position {
 			font-size: 14px;
 		}
+		.card-padding {
+			padding: 20px;
+		}
+
+		a, a:hover, a:active {
+			color: #212529;
+			text-decoration: none;
+		}
+
+		@media only screen and (min-width: 768px) {
+			.card {
+				width: 70%;
+			}
+		}
 
 	</style>
 </head>
@@ -118,48 +118,35 @@
 	<img src="./profile.png" class="card-img-top" style="display: none" alt="...">
 	<div class="container">
 		<div class="row text-center">
-			<div class="col-md-3"></div>
-			<div class="col-md-6">
-				<!-- <div class="name"> -->
+			<div class="col-12 col-md-6 m-auto">
 					<h4>Thanadech Srisukawasu (Menn)</h4>
-				<!-- </div> -->
-				<!-- <div class="position"> -->
-					<h6>Full-stack Developer</h6>
-				<!-- </div> -->
+					<h6>Photographer | Software Engineer</h6>
 			</div>
-			<div class="col-md-3"></div>
 		</div>
 		<div class="row text-center">
-			<div class="col-md-4">
-				<div class="card" style="width: 18rem;">
-					<img src="./instagram.png" class="card-img-top" alt="...">
-					<div class="card-body" style="vertical-align: middle;">
-						<h5 class="card-title">Instagram</h5>
-						<p class="card-text">mtsthanadech</p>
-						<a href="https://www.instagram.com/mtsthanadech/" class="btn btn-primary btn-inst"><i class="fa fa-instagram" aria-hidden="true"></i></i> Instagram</a>
-					</div>
+			<div class="col-12 col-md-6 m-auto p-4">
+				<div class="card m-auto">
+					<a target="blank" href="https://www.instagram.com/mt1996_/">
+						<img src="./instagram.png" class="card-img-top" alt="...">
+						<div class="card-body pb-5" style="vertical-align: middle;">
+							<h5 class="card-title">Instagram</h5>
+							<p class="card-text">mt1996_</p>
+						</div>
+					</a>
 				</div>
 			</div>
-			<div class="col-md-4">
-				<div class="card" style="width: 18rem;">
-					<img src="./github.png" class="card-img-top" alt="...">
-					<div class="card-body">
-						<h5 class="card-title">Github</h5>
-						<p class="card-text">mtsthanadech</p>
-						<a href="https://github.com/mtsthanadech" class="btn btn-primary btn-gith"><i class="fa fa-github" aria-hidden="true"></i> Github</a>
-					</div>
+			<div class="col-12 col-md-6 m-auto p-4">
+				<div class="card m-auto">
+					<a target="blank" href="https://github.com/mtsthanadech">
+						<img src="./github.png" class="card-img-top" alt="...">
+						<div class="card-body pb-5">
+							<h5 class="card-title">Github</h5>
+							<p class="card-text">mtsthanadech</p>
+						</div>
+					</a>
 				</div>
 			</div>
-			<div class="col-md-4">
-				<div class="card" style="width: 18rem;">
-					<img src="./facebook.png" class="card-img-top" alt="...">
-					<div class="card-body">
-						<h5 class="card-title">Facebook</h5>
-						<p class="card-text">Mt's Thanadech</p>
-						<a href="https://www.fb.com/Mts.Thanadech" class="btn btn-primary btn-face"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>
-					</div>
-				</div>
-			</div>
+		
 		</div>
 	</div>
 
