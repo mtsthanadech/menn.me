@@ -1,2 +1,0 @@
-# menn.me
-## Get start 
